@@ -525,20 +525,4 @@ for key, value in student.items():
 
 ---
 
-## 📌 Tip for Exams
-
-* Write **simple logic**
-* Use **proper indentation**
-* Avoid unnecessary functions unless asked
-* Programs without `input()` are acceptable unless specified
-
----
-
-If you want next:
-✅ **Same programs with `input()` version**
-✅ **MCQs with answers**
-✅ **Viva questions + answers**
-✅ **Unit-wise PDF notes**
-
-Just tell me 😊
 
