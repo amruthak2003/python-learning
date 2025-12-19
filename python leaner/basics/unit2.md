@@ -1,9 +1,3 @@
-Perfect 👍
-Below is **COMPLETE UNIT–2 NOTES** with **clear explanations + DEFINITIONS under EACH HEADING**, written in **simple, exam-oriented language** and **GitHub-ready Markdown**.
-
-You can directly save this as **`unit2_notes.md`**.
-
----
 
 # 🐍 Python Programming – UNIT 2
 
@@ -285,32 +279,211 @@ import os
 os.remove("newdata.txt")
 ```
 
----
 
-## 📌 UNIT–2 Exam Tips
 
-✔ Write **definitions first**
-✔ Use **simple syntax**
-✔ Mention **file modes (r, w, a)**
-✔ Avoid unnecessary complexity
+# 🧑‍💻 Python Programming – UNIT 2
+
+## Programming Questions with Answers
 
 ---
 
-## 📂 Suggested GitHub Structure
+## 1️⃣ Program using Built-in Functions
 
+**Program to find maximum and minimum of a list**
+
+```python
+numbers = [10, 25, 5, 40, 15]
+
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
 ```
-unit2/
-│── unit2_notes.md
-│── unit2_programs.md
-│── unit2_definitions.md
+
+---
+
+## 2️⃣ Program using User-Defined Function
+
+**Program to add two numbers**
+
+```python
+def add(a, b):
+    return a + b
+
+print("Sum =", add(10, 20))
 ```
 
 ---
 
-If you want next:
-✅ **UNIT-2 MCQs + answers**
-✅ **Viva questions with answers**
-✅ **UNIT-3 (OOP) notes**
-✅ **Printable PDF version**
+## 3️⃣ Program using Lambda Function
 
-Just tell me, Amrutha 😊
+**Program to find square of a number**
+
+```python
+square = lambda x: x * x
+print(square(6))
+```
+
+---
+
+## 4️⃣ Program using map()
+
+**Program to double all elements in a list**
+
+```python
+numbers = [1, 2, 3, 4]
+
+result = list(map(lambda x: x * 2, numbers))
+print(result)
+```
+
+---
+
+## 5️⃣ Program using filter()
+
+**Program to filter even numbers from a list**
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+
+result = list(filter(lambda x: x % 2 == 0, numbers))
+print(result)
+```
+
+---
+
+## 6️⃣ Program using Recursion
+
+**Program to find factorial of a number**
+
+```python
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print("Factorial =", factorial(5))
+```
+
+---
+
+## 7️⃣ Program using Built-in Module
+
+**Program using math module**
+
+```python
+import math
+
+print("Square root:", math.sqrt(25))
+print("Factorial:", math.factorial(5))
+```
+
+---
+
+## 8️⃣ Program using User-Defined Module
+
+**Create module**
+
+```python
+# mymodule.py
+def greet():
+    print("Hello from module")
+```
+
+**Use module**
+
+```python
+import mymodule
+mymodule.greet()
+```
+
+---
+
+## 9️⃣ Program for Exception Handling
+
+**Program to handle division by zero**
+
+```python
+try:
+    a = 10
+    b = 0
+    print(a / b)
+except ZeroDivisionError:
+    print("Division by zero is not allowed")
+```
+
+---
+
+## 🔟 Program using try-except-else
+
+```python
+try:
+    num = int("10")
+except ValueError:
+    print("Conversion error")
+else:
+    print("Conversion successful")
+```
+
+---
+
+## 1️⃣1️⃣ Program using Assert
+
+**Program to check positive number**
+
+```python
+num = 5
+assert num > 0
+print("Positive number")
+```
+
+---
+
+## 1️⃣2️⃣ Program to Write Data into a File
+
+```python
+file = open("data.txt", "w")
+file.write("Python File Handling")
+file.close()
+```
+
+---
+
+## 1️⃣3️⃣ Program to Read Data from a File
+
+```python
+file = open("data.txt", "r")
+print(file.read())
+file.close()
+```
+
+---
+
+## 1️⃣4️⃣ Program to Append (Update) a File
+
+```python
+file = open("data.txt", "a")
+file.write("\nAppending new content")
+file.close()
+```
+
+---
+
+## 1️⃣5️⃣ Program to Rename a File
+
+```python
+import os
+
+os.rename("data.txt", "newdata.txt")
+```
+
+---
+
+## 1️⃣6️⃣ Program to Remove a File
+
+```python
+import os
+
+os.remove("newdata.txt")
+```
+
+---
+
